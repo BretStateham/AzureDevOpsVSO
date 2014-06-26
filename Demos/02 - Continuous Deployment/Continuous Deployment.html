@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Markdown Preview</title>
+<style>
+body{font-family:helvetica, arial, freesans, clean, sans-serif;color:#333;line-height:1.6;font-size:14px}.markdown-body{line-height:1.6;font-size:14px}.markdown-body > *:first-child{margin-top:0 !important}.markdown-body > *:last-child{margin-bottom:0 !important}.markdown-body a.absent{color:#c00}.markdown-body h1{font-weight:700;-webkit-font-smoothing:antialiased;color:#000;font-size:28px;margin:20px 0 10px;padding:0}.markdown-body h2{font-weight:700;-webkit-font-smoothing:antialiased;color:#000;font-size:24px;border-bottom-color:#ccc;border-bottom-width:1px;border-bottom-style:solid;margin:20px 0 10px;padding:0}.markdown-body h3{font-weight:700;-webkit-font-smoothing:antialiased;font-size:18px;margin:20px 0 10px;padding:0}.markdown-body h4{font-weight:700;-webkit-font-smoothing:antialiased;font-size:16px;margin:20px 0 10px;padding:0}.markdown-body h5{font-weight:700;-webkit-font-smoothing:antialiased;font-size:14px;margin:20px 0 10px;padding:0}.markdown-body h6{font-weight:700;-webkit-font-smoothing:antialiased;color:#777;font-size:14px;margin:20px 0 10px;padding:0}.markdown-body blockquote{color:#777;border-left-color:#ddd;border-left-width:4px;border-left-style:solid;margin:15px 0;padding:0 15px}.markdown-body dl{margin:15px 0;padding:0}.markdown-body table{border-collapse:collapse;margin:15px 0;padding:0}.markdown-body pre{border-radius:3px;border:1px solid #ccc;line-height:19px;overflow:auto;font-size:13px;background-color:#f8f8f8;margin:15px 0;padding:6px 10px}.markdown-body li p.first{display:inline-block}.markdown-body dl dt{font-size:14px;font-style:italic;font-weight:700;margin:15px 0 5px;padding:0}.markdown-body dl dt:first-child{padding:0}.markdown-body dl dd{margin:0 0 15px;padding:0 15px}.markdown-body table tr{border-top-color:#ccc;border-top-width:1px;border-top-style:solid;background-color:#fff;margin:0;padding:0}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.markdown-body img{max-width:100%}.markdown-body span.frame{overflow:hidden;display:block}.markdown-body span.frame > span{border:1px solid #ddd;width:auto;overflow:hidden;float:left;display:block;margin:13px 0 0;padding:7px}.markdown-body span.frame span img{float:left;display:block}.markdown-body span.frame span span{color:#333;clear:both;display:block;padding:5px 0 0}.markdown-body span.align-center > span{text-align:center;overflow:hidden;display:block;margin:13px auto 0}.markdown-body span.align-center span img{text-align:center;margin:0 auto}.markdown-body span.align-right > span{text-align:right;overflow:hidden;display:block;margin:13px 0 0}.markdown-body span.align-right span img{text-align:right;margin:0}.markdown-body span.float-left{overflow:hidden;margin-right:13px;float:left;display:block}.markdown-body span.float-left span{margin:13px 0 0}.markdown-body span.float-right{overflow:hidden;margin-left:13px;float:right;display:block}.markdown-body span.float-right > span{text-align:right;overflow:hidden;display:block;margin:13px auto 0}.markdown-body pre > code{border:currentColor;white-space:pre;margin:0;padding:0}.markdown-body .highlight pre{border-radius:3px;border:1px solid #ccc;line-height:19px;overflow:auto;font-size:13px;background-color:#f8f8f8;padding:6px 10px}.markdown-body p,.markdown-body li{margin:15px 0}.markdown-body ul,.markdown-body ol{padding-left:30px;margin:15px 0}.markdown-body > h2:first-child,.markdown-body > h1:first-child,.markdown-body > h1:first-child + h2{border:0 currentColor;padding-top:0;margin-top:0}.markdown-body > h3:first-child,.markdown-body > h4:first-child,.markdown-body > h5:first-child,.markdown-body > h6:first-child{padding-top:0;margin-top:0}.markdown-body h1 + p,.markdown-body h2 + p,.markdown-body h3 + p,.markdown-body h4 + p,.markdown-body h5 + p,.markdown-body h6 + p,.markdown-body ul li > :first-child,.markdown-body ol li > :first-child,.markdown-body dl dt > :first-child,.markdown-body dl dd > :first-child,.markdown-body blockquote > :first-child,.markdown-body table tr th > :first-child,.markdown-body table tr td > :first-child{margin-top:0}.markdown-body ul li > :last-child,.markdown-body ol li > :last-child,.markdown-body dl dt > :last-child,.markdown-body dl dd > :last-child,.markdown-body blockquote > :last-child,.markdown-body table tr th > :last-child,.markdown-body table tr td > :last-child{margin-bottom:0}.markdown-body table tr th,.markdown-body table tr td{border:1px solid #ccc;text-align:left;margin:0;padding:6px 13px}.markdown-body span.align-center,.markdown-body span.align-right{overflow:hidden;clear:both;display:block}.markdown-body code,.markdown-body tt{border-radius:3px;border:1px solid #eaeaea;white-space:nowrap;background-color:#f8f8f8;margin:0 2px;padding:0 5px}.markdown-body pre code,.markdown-body pre tt{border:currentColor;background-color:transparent}span.codelanguage{display:none}
+</style>
+</head>
+<body>
+<div class="markdown-body">
+<p><a name="ContinousDeployment"></a></p>
+
+<h1 id="Continuous_Deployment_with_Visual_Studio_Online_and_Azure_Websites">Continuous Deployment with Visual Studio Online and Azure Websites</h1>
+
+<hr>
+
+<p><a name="Overview"></a></p>
+
+<h2 id="Overview">Overview</h2>
+
+<p>In this demo, we'll show you how to configure Continous Deployment using Visual Studio Online and Azure Websites.</p>
+
+<p><a id="goals"></a></p>
+
+<h3 id="Goals">Goals</h3>
+
+<p>In this demo, you will see how to:</p>
+
+<ol>
+<li>Create a Team Project in Visual Studio Online</li>
+<li>Create an Azure Web Site</li>
+<li>Link your Azure Website to your Visual Studio Online Team Project</li>
+<li>Perform Continous Builds using Visual Studio Online</li>
+</ol>
+
+<p><a name="technologies"></a></p>
+
+<h3 id="Key_Technologies">Key Technologies</h3>
+
+<ul>
+<li><a href="http://azure.microsoft.com/en-us/documentation/services/web-sites/">Azure Web Sites</a></li>
+<li><a href="http://www.visualstudio.com/">Visual Studio Online</a></li>
+</ul>
+
+<p><a name="Setup"></a></p>
+
+<h3 id="Setup_and_Configuration">Setup and Configuration</h3>
+
+<p>In order to execute this demo you need to do a little prep.</p>
+
+<ol>
+<li><p>***IMPORTANT - Follow all of the steps in this demo to create a Visual Studio Team Project, Azure Website and Web Project.  Having the site deployed ahead of time, along with the Application Insights and Load Testing Steps in subsequent demos allow you to demo with real information.  If you do this on the fly, the Application Insights data will be sparse and un-interesting.  </p></li>
+<li><p>Ensure that you have installed the Azure SDK (latest version) on your demo machine (or VM).  Go to <a href="http://azure.microsoft.com/en-us/downloads/">http://azure.microsoft.com/en-us/downloads/</a> and click the <strong>&quot;VS 2013 Install&quot;</strong> link, then follow the prompts. </p></li>
+<li><p>Optionall install the &quot;Windows Azure Powershell&quot; command line toos.  </p>
+
+<ul>
+<li>From the Windows Start menu, type &quot;Microsoft Web Platform Installer&quot; and in the search results click the link to launch it. </li>
+<li>In the Web Platform Installer search box, type <strong>&quot;Azure PowerShell&quot;</strong></li>
+<li>Click the <strong>&quot;Add&quot;</strong> button to the right of <strong>&quot;Windows Azure PowerShell&quot;</strong></li>
+<li>Clikc the <strong>&quot;Install&quot;</strong> button and follow the prompts to complete the installation</li>
+</ul></li>
+<li><p>Optionally the &quot;<a href="http://visualstudiogallery.msdn.microsoft.com/82367b81-3f97-4de1-bbf1-eaf52ddc635a">Application Insights Tools for Visual Studio</a>&quot;, although we won't use the Applicaiton Insights tools in this demo.   </p></li>
+</ol>
+
+<p><a name="Demo"></a></p>
+
+<h2 id="Demo">Demo</h2>
+
+<p>This demo is composed of the following segments:</p>
+
+<ol>
+<li><a href="#CreateTeamProject">Create a Team Project in Visual Studio Online</a></li>
+<li><a href="#CreateWebSite">Create an Azure Web Site and link it to your Team Project</a></li>
+<li><a href="#CreateWebProject">Create a Web Project and Check It In</a></li>
+<li><a href="#VerifyContinuousDeployment">Verify Continuous Deployment</a></li>
+</ol>
+
+<hr>
+
+<p><a name="CreateTeamProject"></a></p>
+
+<h3 id="Create_a_Team_Project_in_Visual_Studio_Online">Create a Team Project in Visual Studio Online</h3>
+
+<ol>
+<li><p>If you don't already have a Visual Studio Online Account, create one here: <a href="http://go.microsoft.com/fwlink/?LinkId=307137">http://go.microsoft.com/fwlink/?LinkId=307137</a></p></li>
+<li><p>Sign into your own Visual Studio Online site at <strong>https://&lt;your vso account name&gt;.visualstudio.com</strong> </p></li>
+<li><p>If this is your first time in, you should be prompted to create a new project.  If not, under <strong>&quot;Recent projects &amp; teams&quot;</strong>, click the <strong>&quot;New&quot;</strong> link to create a new Team Project. </p>
+
+<p><img src="images/01010-newteamprojectlink.png?raw=true" alt="01010-NewTeamProjectLink" title="New Link">
+</p></li>
+<li><p>In the <strong>&quot;CREATE NEW TEAM PROJECT&quot;</strong> pop-up, complete the fields as such, and click the <strong>&quot;Create project</strong> button:</p>
+
+<ul>
+<li><strong>Project Name</strong>: Any name</li>
+<li><strong>Description</strong>: Any description</li>
+<li><strong>Process Template</strong>: Microsoft Visual Studio Scrum 2013</li>
+<li><strong>Version Control</strong>: Team Foundation Version Control</li>
+</ul>
+
+<p><img src="images/01020-createnewteamprojectpopup.png?raw=true" alt="01020-CreateNewTeamProjectPopUp" title="Create New Team Project Pop-Up">
+</p></li>
+<li><p>Wait until the team project creation is complete, then click the <strong>&quot;Navigate to project&quot;</strong> button:</p>
+
+<p><img src="images/01030-navigatetoprojectbutton.png?raw=true" alt="01030-NavigateToProjectButton" title="Navigate To Project Button">
+</p></li>
+<li><p>In the team project page, click the <strong>&quot;CODE&quot;</strong> link along the top, and note that other than the default <strong>&quot;BuildProcessTemplates&quot;</strong> folder, there isn't any content in the source code repository:</p>
+
+<p><img src="images/01040-emptycoderepository.png?raw=true" alt="01040-EmptyCodeRepository" title="Empty Code Repository">
+</p></li>
+<li><p>Then, click the <strong>&quot;BUILD&quot;</strong> menu along the top, and confirm that there are no build definitions currently exist:</p>
+
+<p><img src="images/01050-nobuilddefinitions.png?raw=true" alt="01050-NoBuildDefinitions" title="No Build Definitions">
+</p></li>
+</ol>
+
+<hr>
+
+<p><a name="CreateWebSite"></a></p>
+
+<h3 id="Create_an_Azure_Web_Site_and_link_it_to_your_Team_Project">Create an Azure Web Site and link it to your Team Project</h3>
+
+<ol>
+<li><p>Open the Azure Management Portal (<a href="https://manage.windowsazure.com">https://manage.windowsazure.com</a>)</p></li>
+<li><p>First, let's show the available web site templates.  Click <strong>+NEW</strong>&quot; | <strong>COMPUTE</strong> | <strong>WEB SITE</strong> | <strong>FROM GALLERY</strong>:</p>
+
+<p><img src="images/02010-fromgallery.png?raw=true" alt="02010-FromGallery" title="From Gallery">
+</p></li>
+<li><p>In the <strong>&quot;ADD WEB APP&quot;</strong> pop-up, scroll through the list of available templates, to show them, but rather than actually creating a site from a template, click the <strong>&quot;x&quot;</strong> button in the top right corner to close the pop-up window:</p>
+
+<p><img src="images/02020-websitegallery.png?raw=true" alt="02020-WebSiteGallery" title="Web Site Gallery">
+</p></li>
+<li><p>To create the actual site, click <strong>+NEW+</strong> | <strong>COMPUTE</strong> | <strong>WEB SITE</strong> | <strong>CUSTOM CREATE</strong></p>
+
+<p><img src="images/02030-customcreate.png?raw=true" alt="02030-CustomCreate" title="Custom Create Web Site">
+</p></li>
+<li><p>In the <strong>&quot;NEW WEB SITE - CUSTOM CREATE&quot;</strong> window, complete the fields as follows, and click the <strong>Next</strong> (right arrow) button to continue:</p>
+
+<ul>
+<li><strong>URL</strong> : Enter a valid, unique host name for your web site.</li>
+<li><strong>WEB HOSTING PLAN</strong>: Choose, or create a new free web hosting plan as needed</li>
+<li><strong>REGION</strong>: Pick an appropriate region</li>
+<li><strong>DATABASE</strong>: No Database</li>
+<li><strong>Publish from source control</strong>: <strong>CHECKED</strong> - <strong>IMPORTANT</strong> - this is the point of the demo.  Make sure you enable this checkbox. </li>
+</ul>
+
+<p><img src="images/02040-createwebsite.png?raw=true" alt="02040-CreateWebSite" title="Create Web Site">
+</p></li>
+<li><p>On the <strong>&quot;Where is your source code?&quot;</strong> page, select <strong>&quot;Visual Studio Online</strong> and click <strong>Next</strong></p>
+
+<p><img src="images/02050-visualstudioonline.png?raw=true" alt="02050-VisualStudioOnline" title="Visual Studio Online">
+</p></li>
+<li><p>On the <strong>Authorize connection</strong> enter the name of your <strong>Visual Studio Online</strong> account, and click the <strong>Authorize Now</strong> link:</p>
+
+<p><img src="images/02060-authorizevsoaccess.png?raw=true" alt="02060-AuthorizeVsoAccess" title="Authorize VSO Account Access">
+</p></li>
+<li><p>Another browser window should appear prompting you to allow you website to access your Visual Studio Online account.  Click the <strong>Accept</strong> button. </p>
+
+<p><img src="images/02070-accept.png?raw=true" alt="02070-Accept" title="Accept">
+</p></li>
+<li><p>On the <strong>&quot;Chose a repository to deploy&quot;</strong> page, select the Visual Studio Online team project you create in the previous demo.  </p>
+
+<p><img src="images/02080-chooseteamproject.png?raw=true" alt="02080-ChooseTeamProject" title="Choose Team Project">
+</p></li>
+<li><p>Back in the Azure Management Portal, wait until the new website's status says <strong>&quot;Running&quot;</strong>, then, right-click on the link to the website to the right, and select <strong>&quot;Open in new window&quot;</strong></p>
+
+<p><img src="images/02090-websitelink.png?raw=true" alt="02090-WebsiteLink" title="Website Link">
+</p></li>
+<li><p>Then in the window that opens, verify that a place holder page is shown, and close the browser witht he placeholder page when done:</p>
+
+<p><img src="images/02100-placeholdersite.png?raw=true" alt="02100-PlaceholderSite" title="Placeholder Site">
+</p></li>
+<li><p>Lastly, open the &quot;Team Project&quot; again back in your <strong>&quot;https://&lt;your account name&gt;.visualstudio.com&quot;</strong> visual studio online account, and on the <strong>&quot;BUILD&quot;</strong> page, notice that there is now a <strong>&quot;&lt;WebSiteName&gt;_CD&quot;</strong> build definition.  The <strong>&quot;CD&quot;</strong> stands for <strong>&quot;Continuous Deployment&quot;</strong> and is the build definition that will cause our site to be built and deployed on each check in.  We'll look at its configuration later. </p>
+
+<p><img src="images/02110-builddefinition.png?raw=true" alt="02110-BuildDefinition" title="Build Definition">
+</p></li>
+</ol>
+
+<hr>
+
+<p><a name="CreateWebProject"></a></p>
+
+<h3 id="Create_a_Web_Project_and_Check_It_In">Create a Web Project and Check It In</h3>
+
+<ol>
+<li><p>Back on the <strong>&quot;Websites&quot;</strong> page of the Azure Management portal, click on the name of your new website to open it's dashboard:</p>
+
+<p><img src="images/03010-openwebsitedashboard.png?raw=true" alt="03010-OpenWebsiteDashboard" title="Open Website Dashboard">
+</p></li>
+<li><p>Click on <strong>&quot;DEPLOYMENTS&quot;</strong> along the top, and you should see that your site is linked to your Visual Studio Online account.  Click the <strong>&quot;VISUAL STUDIO&quot;</strong> link along the bottom to open the associated team project in Visual Studio.  (You don't have to do it this way, you could connect to the team project in Visual Studio manually instead):</p>
+
+<p><img src="images/03020-launchvisualstudio.png?raw=true" alt="03020-LaunchVisualStudio" title="Launch Visual Studio">
+</p></li>
+<li><p>If prompted, click the <strong>Checkmark</strong> button to confirm the launch of Visual Studio (the dialog says 2012, but 2013 is better!</p>
+
+<p><img src="images/03030-openvisualstudio.png?raw=true" alt="03030-OpenVisualStudio" title="Open Visual Studio">
+</p></li>
+<li><p>Visual Studio should be launched, and in the <strong>&quot;Team Explorer&quot;</strong> window, you should see that you are connected to the team project in Visual Studio Online:</p>
+
+<p><img src="images/03040-teamexplorer.png?raw=true" alt="03040-TeamExplorer" title="Team Explorer">
+</p></li>
+<li><p>From the Visual Studio menu bar, select <strong>&quot;FILE&quot;</strong> | <strong>&quot;New&quot;</strong> | <strong>&quot;Project...&quot;</strong>, then in the <strong>&quot;New Project&quot;</strong> window, under the list templates select <strong>&quot;Installed&quot;</strong> | <strong>&quot;Templates&quot;</strong> | <strong>&quot;Visual C#&quot;</strong> | <strong>&quot;Web&quot;</strong>, then select the <strong>&quot;ASP.NET Web Application&quot;</strong> Project template.  Give it a name and location and <strong>MAKE SURE THE &quot;ADD TO SOURCE CONTROL&quot; CHECKBOX IS CHECKED!</strong>, also, if the Application Insights options are available, make sure <strong>&quot;Add Application Insights to Project&quot;</strong> option is <strong>NOT CHECKED</strong> (You could do it here, but we'll do it later in the next demo instead):</p>
+
+<p><img src="images/03050-newproject.png?raw=true" alt="03050-NewProject" title="New Project">
+</p></li>
+<li><p>In the <strong>&quot;New ASP.NET Project&quot;</strong> window, select <strong>MVC&quot;</strong>, turn on the checkbox for <strong>Add unit tests&quot;</strong> and <strong>UNCHECK</strong> the <strong>&quot;Host in the cloud&quot;</strong> checkbox.  We will host it in the cloud, but we have already configured that by connecting our Azure Website to our Visual Studio Online team project.  </p>
+
+<p><img src="images/03060-newwebsite.png?raw=true" alt="03060-NewWebSite" title="New Web Site">
+</p></li>
+<li><p>In the <strong>&quot;Choose Source Control&quot;</strong> dialog, select <strong>&quot;Team Foundation Version Control&quot;</strong> and click <strong>&quot;OK&quot;</strong>:
+<img src="images/03070-teamfoundationversioncontrol.png?raw=true" alt="03070-TeamFoundationVersionControl" title="Team Foundation Version Control">
+</p></li>
+<li><p>In the *&quot;&quot;Add Solution to Source Control&quot;** window, select the Team Project you created earlier, and click <strong>&quot;OK&quot;</strong> </p>
+
+<p><img src="images/03080-selectteamproject.png?raw=true" alt="03080-SelectTeamProject" title="Select Team Project">
+</p></li>
+<li><p>In the <strong>&quot;Solution Explorer&quot;</strong> window, open the <strong>&quot;Views&quot;</strong> | <strong>&quot;Home&quot;</strong> | <strong>&quot;Index.cshtml&quot;</strong> file, and modify the content of the first <strong>&lt;h1&gt;ASP.NET&lt;/h1&gt;</strong> tag to something unique, then run it to ensure the site works locally:</p>
+
+<p><img src="images/03090-modifysiteandverify.png?raw=true" alt="03090-ModifySiteAndVerify" title="Modify Site and Verify">
+</p></li>
+<li><p>Verify that the site runs properly in the browser, then close the browser window:</p>
+
+<p><img src="images/03100-verifysite.png?raw=true" alt="03100-VerifySite" title="Verify Site">
+</p></li>
+<li><p>Finally, let's check in our changes to the website.  In the Visual Studio Solution Explorer, right click on the name of the solution (make sure to select the solution, not just the project) and select <strong>&quot;Check In...&quot;</strong> from the pop-up menu </p>
+
+<p><img src="images/03110-checkinsolution.png?raw=true" alt="03110-CheckInSolution" title="Check In Solution">
+</p></li>
+<li><p>In the <strong>&quot;Team Explorer&quot;</strong> window, enter a comment, and click the <strong>&quot;Check In&quot;</strong> button.</p>
+
+<p><img src="images/03120-checkin.png?raw=true" alt="03120-CheckIn" title="Check In">
+</p></li>
+<li><p>If prompted, click &amp;&amp;&quot;Yes&quot;** to confirm the check in:</p>
+
+<p><img src="images/03130-confirmcheckin.png?raw=true" alt="03130-ConfirmCheckIn" title="Confirm Check In">
+</p></li>
+<li><p>Wait for the Check In to complete:</p>
+
+<p><img src="images/03140-checkincomplete.png?raw=true" alt="03140-CheckInComplete" title="Check In Complete">
+</p></li>
+</ol>
+
+<hr>
+
+<p><a name="VerifyContinuousDeployment"></a></p>
+
+<h3 id="Verify_Continuous_Deployment">Verify Continuous Deployment</h3>
+
+<ol>
+<li><p>Remember that when we linked the Azure Web Site to our Visual Studio Online Team Project, and <strong>&quot;&#42;_CD&quot;</strong> build definition created for us in Visual Studio Online.  Now that we have checked-in, we should see that the build definition has been queued (or possibly already completed).  We can see in in various places:</p>
+<blockquote>
+<p><strong>Note:</strong> As luck would have it, the deployment went very quickly as I was writing these steps.  As &quot;Murphy&quot; would have it however, it often takes significantly longer during live demos.  Be prepared to waith for the build / deployment process to take a long time (sometimes 5-10 minutes) before it completes.  If you look at it while it is still in process the build will be &quot;Queued&quot; rather than &quot;Completed&quot;.  You can also open the queued build in both the Visual Studio Online website, as well as from within Visual Studio to monitor it's progress.  </p>
+</blockquote></li>
+<li><p>In the Visual Studio <strong>&quot;Team Explorer&quot;</strong> window's <strong>&quot;Builds&quot;</strong> page: </p>
+
+<p><img src="images/04020-teamexplorerbuilds.png?raw=true" alt="04020-TeamExplorerBuilds" title="Team Explorer Builds">
+</p></li>
+<li><p>On the <strong>BUILD</strong> page for our Visual Studio Online Team Project (depending on how fast you look it may be under <strong>&quot;Queued&quot;</strong> or <strong>&quot;Completed&quot;</strong>):</p>
+
+<p><img src="images/04100-completedbuildinvso.png?raw=true" alt="04010-CompletedBuildInVSO" title="Completed Build in VSO">
+</p></li>
+<li><p>As well as from the <strong>&quot;DEPLOYMENTS&quot;</strong> page for our website in the Azure Management Portal:</p>
+
+<p><img src="images/04030-websitedeployments.png?raw=true" alt="04030-WebSiteDeployments" title="Web Site Deployments">
+</p></li>
+<li><p>Finally, if the deployment has completed, we can verify that the site is now live.  Open the **http://&lt;your website name&gt;.azurewebsites.net&quot; site in the browser, and verify that the created website is now live (Refresh the browser if necessary). </p>
+
+<p><img src="images/04040-livewebsite.png?raw=true" alt="04040-LiveWebSite" title="Live Web Site">
+</p></li>
+<li><p>Lastly, back in Visual Studio, in the <strong>&quot;Team Explorer&quot;</strong> window, click the <strong>Home</strong> button along the top, then select <strong>Builds</strong> from the list of options. </p>
+
+<p><img src="images/04050-builds.png?raw=true" alt="04050-Builds" title="Builds">
+</p></li>
+<li><p>Then in the list of builds, at the bottom, right click the <strong>&#42;_CD</strong> build definition for your website, and select <strong>&quot;Edit build defintion...&quot;</strong> from the pop-up menu:</p>
+
+<p><img src="images/04060-editbuilddefinition.png?raw=true" alt="04060-EditBuildDefinition" title="Edit Build Definition">
+</p></li>
+<li><p>On the <strong>&quot;Trigger&quot;</strong> page, note that <strong>&quot;Continous Integration - Build each check-in&quot;</strong> is selected:</p>
+
+<p><img src="images/04070-trigger.png?raw=true" alt="04070-Trigger" title="Trigger">
+</p></li>
+<li><p>On the <strong>&quot;Source Settings&quot;</strong> page, notice that the source is set to the entire team project.  You could be more specific if you wanted:</p>
+
+<p><img src="images/04080-sourcesettings.png?raw=true" alt="04080-SourceSettings" title="Source Settings">
+</p></li>
+<li><p>And finally on the <strong>&quot;Process&quot;</strong> page, note the project that will be built is our Web project, the Unit Tests will be run, and it will be deployed to our Azure Website when it was done!  You can close the build definition when you are done. </p>
+
+<p><img src="images/04090-process.png?raw=true" alt="04090-Process" title="Process">
+</p></li>
+</ol>
+
+<hr>
+
+<p><a name="summary"></a></p>
+
+<h2 id="Summary">Summary</h2>
+
+<p>Congraulations!  In this demo you learned the basics of:</p>
+
+<ul>
+<li>Creating Visual Studio Online Team Projects</li>
+<li>Creating Azure Web Sites</li>
+<li>Using Continuous Deployment Builds with Visual Studio Online</li>
+</ul>
+
+</div>
+</body>
+</html>

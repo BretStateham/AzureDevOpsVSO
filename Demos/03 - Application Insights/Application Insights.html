@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Markdown Preview</title>
+<style>
+body{font-family:helvetica, arial, freesans, clean, sans-serif;color:#333;line-height:1.6;font-size:14px}.markdown-body{line-height:1.6;font-size:14px}.markdown-body > *:first-child{margin-top:0 !important}.markdown-body > *:last-child{margin-bottom:0 !important}.markdown-body a.absent{color:#c00}.markdown-body h1{font-weight:700;-webkit-font-smoothing:antialiased;color:#000;font-size:28px;margin:20px 0 10px;padding:0}.markdown-body h2{font-weight:700;-webkit-font-smoothing:antialiased;color:#000;font-size:24px;border-bottom-color:#ccc;border-bottom-width:1px;border-bottom-style:solid;margin:20px 0 10px;padding:0}.markdown-body h3{font-weight:700;-webkit-font-smoothing:antialiased;font-size:18px;margin:20px 0 10px;padding:0}.markdown-body h4{font-weight:700;-webkit-font-smoothing:antialiased;font-size:16px;margin:20px 0 10px;padding:0}.markdown-body h5{font-weight:700;-webkit-font-smoothing:antialiased;font-size:14px;margin:20px 0 10px;padding:0}.markdown-body h6{font-weight:700;-webkit-font-smoothing:antialiased;color:#777;font-size:14px;margin:20px 0 10px;padding:0}.markdown-body blockquote{color:#777;border-left-color:#ddd;border-left-width:4px;border-left-style:solid;margin:15px 0;padding:0 15px}.markdown-body dl{margin:15px 0;padding:0}.markdown-body table{border-collapse:collapse;margin:15px 0;padding:0}.markdown-body pre{border-radius:3px;border:1px solid #ccc;line-height:19px;overflow:auto;font-size:13px;background-color:#f8f8f8;margin:15px 0;padding:6px 10px}.markdown-body li p.first{display:inline-block}.markdown-body dl dt{font-size:14px;font-style:italic;font-weight:700;margin:15px 0 5px;padding:0}.markdown-body dl dt:first-child{padding:0}.markdown-body dl dd{margin:0 0 15px;padding:0 15px}.markdown-body table tr{border-top-color:#ccc;border-top-width:1px;border-top-style:solid;background-color:#fff;margin:0;padding:0}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.markdown-body img{max-width:100%}.markdown-body span.frame{overflow:hidden;display:block}.markdown-body span.frame > span{border:1px solid #ddd;width:auto;overflow:hidden;float:left;display:block;margin:13px 0 0;padding:7px}.markdown-body span.frame span img{float:left;display:block}.markdown-body span.frame span span{color:#333;clear:both;display:block;padding:5px 0 0}.markdown-body span.align-center > span{text-align:center;overflow:hidden;display:block;margin:13px auto 0}.markdown-body span.align-center span img{text-align:center;margin:0 auto}.markdown-body span.align-right > span{text-align:right;overflow:hidden;display:block;margin:13px 0 0}.markdown-body span.align-right span img{text-align:right;margin:0}.markdown-body span.float-left{overflow:hidden;margin-right:13px;float:left;display:block}.markdown-body span.float-left span{margin:13px 0 0}.markdown-body span.float-right{overflow:hidden;margin-left:13px;float:right;display:block}.markdown-body span.float-right > span{text-align:right;overflow:hidden;display:block;margin:13px auto 0}.markdown-body pre > code{border:currentColor;white-space:pre;margin:0;padding:0}.markdown-body .highlight pre{border-radius:3px;border:1px solid #ccc;line-height:19px;overflow:auto;font-size:13px;background-color:#f8f8f8;padding:6px 10px}.markdown-body p,.markdown-body li{margin:15px 0}.markdown-body ul,.markdown-body ol{padding-left:30px;margin:15px 0}.markdown-body > h2:first-child,.markdown-body > h1:first-child,.markdown-body > h1:first-child + h2{border:0 currentColor;padding-top:0;margin-top:0}.markdown-body > h3:first-child,.markdown-body > h4:first-child,.markdown-body > h5:first-child,.markdown-body > h6:first-child{padding-top:0;margin-top:0}.markdown-body h1 + p,.markdown-body h2 + p,.markdown-body h3 + p,.markdown-body h4 + p,.markdown-body h5 + p,.markdown-body h6 + p,.markdown-body ul li > :first-child,.markdown-body ol li > :first-child,.markdown-body dl dt > :first-child,.markdown-body dl dd > :first-child,.markdown-body blockquote > :first-child,.markdown-body table tr th > :first-child,.markdown-body table tr td > :first-child{margin-top:0}.markdown-body ul li > :last-child,.markdown-body ol li > :last-child,.markdown-body dl dt > :last-child,.markdown-body dl dd > :last-child,.markdown-body blockquote > :last-child,.markdown-body table tr th > :last-child,.markdown-body table tr td > :last-child{margin-bottom:0}.markdown-body table tr th,.markdown-body table tr td{border:1px solid #ccc;text-align:left;margin:0;padding:6px 13px}.markdown-body span.align-center,.markdown-body span.align-right{overflow:hidden;clear:both;display:block}.markdown-body code,.markdown-body tt{border-radius:3px;border:1px solid #eaeaea;white-space:nowrap;background-color:#f8f8f8;margin:0 2px;padding:0 5px}.markdown-body pre code,.markdown-body pre tt{border:currentColor;background-color:transparent}span.codelanguage{display:none}
+</style>
+</head>
+<body>
+<div class="markdown-body">
+<p><a name="ApplicationInsights"></a></p>
+
+<h1 id="Monitoring_Web_Applications_with_Application_Insights">Monitoring Web Applications with Application Insights</h1>
+
+<hr>
+
+<p><a name="Overview"></a></p>
+
+<h2 id="Overview">Overview</h2>
+
+<p>In this demo, you will learn how to use <strong>&quot;Application Insights&quot;</strong> in <strong>&quot;Visual Studio Online&quot;</strong> to perform basic availability monitoring of a web application.  </p>
+
+<p><a id="goals"></a></p>
+
+<h3 id="Goals">Goals</h3>
+
+<p>In this demo, you will see how to:</p>
+
+<ol>
+<li>Add <strong>&quot;Application Insights Telemetry&quot;</strong> to your Web Application</li>
+<li>Add Usage monitoring to an ASP.NET Web Application</li>
+<li>Create a Basic Availability Test to monitor your Web Application</li>
+</ol>
+
+<p><a name="technologies"></a></p>
+
+<h3 id="Key_Technologies">Key Technologies</h3>
+
+<ul>
+<li><a href="http://www.visualstudio.com/">Visual Studio Online</a></li>
+<li><a href="http://msdn.microsoft.com/en-us/library/dn481095.aspx">Application Insights</a></li>
+</ul>
+
+<p><a name="Setup"></a></p>
+
+<h3 id="Setup_and_Configuration">Setup and Configuration</h3>
+
+<ol>
+<li><p>This demo assumes that you have completed the <strong>&quot;Continuous Deployment with Visual Studio Online and Azure Websites&quot;</strong> demo.  If you haven't, you need to first complete the steps in that demo.</p></li>
+<li><p>It is also especially helpful if you have ahead of time (hours or even days in advance) setup a web site with Availability Monitoring as described in this demo.  This will give you an existing set of Availability Monitoring data that you can refer to in the demo.  A brand new Single Url test will take a long time (hours) to build a usable data set. </p></li>
+<li><p>You may optionally have installed the &quot;<a href="http://visualstudiogallery.msdn.microsoft.com/82367b81-3f97-4de1-bbf1-eaf52ddc635a">Application Insights Tools for Visual Studio</a>&quot; previously.  If it is already installed, fine, if not, you will install it as part of this demo. </p></li>
+</ol>
+
+<p><a name="Demo"></a></p>
+
+<h2 id="Demo">Demo</h2>
+
+<p>This demo is composed of the following segments:</p>
+
+<ol>
+<li><a href="#InstallTools">Install the &quot;Application Insights Tools for Visual Studio&quot;</a></li>
+<li><a href="#AddTelemetry">Add Application Insights Telemetry to your Web Application</a></li>
+<li><a href="#ConfigureMonitoring">Configure Availability Monitoring</a></li>
+</ol>
+
+<hr>
+
+<p><a name="InstallTools"></a></p>
+
+<h3 id="Install_the_Application_Insights_Tools_for_Visual_Studio">Install the &quot;Application Insights Tools for Visual Studio&quot;</h3>
+
+<ol>
+<li><p>Open Visual Studio 2013 and from the menu bar, select <strong>&quot;TOOLS&quot;</strong> | <strong>&quot;Extensions and Updates...&quot;</strong></p></li>
+<li><p>In the <strong>&quot;Extensions and Updates*&quot;&quot; window, in the search box in the top right corner, type **&quot;Application Insights&quot;</strong> and then in the search results, click the <strong>&quot;Download&quot;</strong> button for <strong>&quot;Application Insights Tools for Visual Studio&quot;</strong></p>
+
+<p><img src="images/01010-download.png?raw=true" alt="01010-Download" title="Download Application Insights Tools">
+</p></li>
+<li><p>In the <strong>&quot;Download and Install&quot;</strong> window, click the <strong>&quot;Install&quot;</strong> button.</p>
+
+<p><img src="images/01020-install.png?raw=true" alt="01020-Install" title="Install Applicaiton Insights Tools">
+</p></li>
+<li><p>When the installation is complete, in the <strong>&quot;Extensions and Updates&quot;</strong> window, click the <strong>&quot;Restart Now&quot;</strong> button to restart Visual Studio</p>
+
+<p><img src="images/01030-restart.png?raw=true" alt="01030-Restart" title="Restart Visual Studio">
+</p></li>
+</ol>
+
+<hr>
+
+<p><a name="AddTelemetry"></a></p>
+
+<h3 id="Add_Application_Insights_Telemetry_to_your_Web_Application">Add Application Insights Telemetry to your Web Application</h3>
+
+<ol>
+<li><p>In Visual Studio, re-open the Web Site project we created previously in the <strong>&quot;Continuous Deployment with Visual Studio Online and Azure Websites&quot;</strong> demo.</p></li>
+<li><p>In the <strong>&quot;Solution Explorer&quot;</strong> window, right click the web application project (not the solution), and select  <strong>&quot;Add Application Insights Telemetry to Project...&quot;</strong> from the pop-up menu:</p>
+
+<p><img src="images/02010-addtelemetry.png?raw=true" alt="02010-AddTelemetry" title="Add Telemetry">
+</p></li>
+<li><p>In the <strong>&quot;Add Application Insights to Project&quot;</strong> window, confirm that the correct <strong>&quot;Visual Studio Online&quot;</strong> account is being used.  Note also that a <strong>&quot;Component&quot;</strong> (Application Insights &quot;Application&quot;) will be created for monitoring, and that the name will be the same name as this web project.  If you need to change any of those settings, do so, using the <strong>&quot;Use different account&quot;</strong> and <strong>&quot;Configure settings&quot;</strong> links, otherwise, click the <strong>&quot;Add Application Insights To Project&quot;</strong> button:</p>
+
+<p><img src="images/02020-addapplication.png?raw=true" alt="02020-AddApplication" title="Add Application">
+</p></li>
+<li><p>When complete, a new <strong>&quot;ApplicationInsights.config&quot;</strong> node should appear under your project in the Visaul Studio <strong>&quot;Solution Explorer&quot;</strong> window.  If you click on the node, you will see that it is an XML file that contains Application Insights configuration for this web application.  This file is fully documented, but we won't discuss it further in this demo:</p></li>
+</ol>
+
+<p><img src="images/02030-applicationinsightsconfig.png?raw=true" alt="02030-ApplicationInsightsConfig" title="Applicaiton Insights Config">
+</p>
+
+<ol>
+<li><p>In the <strong>&quot;Solution Explorer&quot;</strong> window, right-click the <strong>&quot;ApplicationInsights.config&quot;</strong> file and select <strong>&quot;Open Application Insights Portal...&quot;</strong> from the pop-up menu:</p>
+
+<p><img src="images/02040-openportal.png?raw=true" alt="02040-OpenPortal" title="Open Portal">
+</p></li>
+<li><p>A browser window should open, enter your Visual Studio Online credentials if needed.    Notice that a dashboard has been created for your web application.  Click the <strong>&quot;Administer Account&quot;</strong> (<strong>Gear Icon</strong>) in the top right corner to access the settings for the monitored application.</p>
+
+<p><img src="images/02050-administeraccount.png?raw=true" alt="02050-AdministerAccount" title="Administer Account">
+</p></li>
+<li><p>On the <strong>&quot;&lt;Your App Name&gt; Overview&quot;</strong> page, turn on the checkbox next to eh <strong>&quot;Send notifications about this application to&quot;</strong>, ensure the correct email address and click <strong>&quot;Apply&quot;</strong>:</p>
+
+<p><img src="images/02060-notificationemails.png?raw=true" alt="02060-NotificationEmails" title="Notification Emails">
+</p></li>
+<li><p>Next, click the <strong>&quot;Get configuration keys and downloads&quot;</strong> button:</p>
+
+<p><img src="images/02070-configuration.png?raw=true" alt="02070-Configuration" title="Get Configuration">
+</p></li>
+<li><p>On the <strong>&quot;Keys &amp; Downloads&quot;</strong> page, scroll down the the <strong>&quot;JavaScript Usage Analytics Code&quot;</strong> and copy the script shown to the clipboard.</p>
+<blockquote>
+<p><strong>Note:</strong> Your instrumentation keys will differ from the ones shown here.</p>
+</blockquote>
+<p><img src="images/02080-copyjavascript.png?raw=true" alt="02080-CopyJavaScript" title="Copy JavaScript">
+</p></li>
+<li><p>Back in Visual Studio <strong>&quot;Solution Explorer&quot;</strong>, under the web application project, open the <strong>&quot;Views&quot;</strong> | <strong>&quot;Shared&quot;</strong> | <strong>&quot;_Layout.cshtml&quot;</strong> file, then immediately before the **closing &lt;/head&gt; tag, paste the JavaScript you just copied, and save the changes:</p>
+<blockquote>
+<p><strong>Note:</strong> The JavaScript logs a <strong>&quot;Page View&quot;&quot;* with Application Insights.  The **&quot;_Layout.cshtml&quot;</strong> file is used by all of the MVC views in the application so by adding the JavaScript to that file, it will get called for all views, and thus allow us to create an entry in Application Insights everytime a users views a page.  Cool!  Learn more about <a href="http://msdn.microsoft.com/library/dn481098.aspx">Javascript usage analytics</a></p>
+</blockquote>
+<p><img src="images/02090-pastejavascript.png?raw=true" alt="02090-PasteJavaScript" title="Paste JavaScript">
+</p></li>
+<li><p>We need to Check In our changes so they can be deployed to the live site.  In the <strong>&quot;Solution Explorer&quot;</strong> window, right click the solution, and choose **&quot;Check In...&quot; from the pop-up menu:</p>
+
+<p><img src="images/02100-checkin.png?raw=true" alt="02100-CheckIn" title="Check In">
+</p></li>
+<li><p>In the <strong>&quot;Team Explorer&quot;</strong> window, enter a <strong>&quot;Comment&quot;</strong> and click <strong>&quot;Check In&quot;</strong>.  As before, if prompted to confirm, click <strong>&quot;Yes&quot;</strong></p>
+
+<p><img src="images/02110-checkinchanges.png?raw=true" alt="02110-CheckInChanges" title="Check In Changes">
+</p></li>
+<li><p>Upon successful check in, the Continous Deployment build definition that was created in the previous demo should automatically deploy the updates to the live website.  You can use the techniques discussed in the previous demo to monitor the build if you like. </p></li>
+</ol>
+
+<hr>
+
+<p><a name="ConfigureMonitoring"></a></p>
+
+<h3 id="Configure_Availability_Monitoring">Configure Availability Monitoring</h3>
+
+<ol>
+<li><p>If needed, re-open the Application Insights portal for your application by right-clicking the <strong>&quot;ApplicationInsights.config&quot;</strong> node in the Visual Studio <strong>&quot;Solution Explorer&quot;</strong> and selecting <strong>&quot;Open the Application Insights Portal...&quot;</strong> from the pop-up menu: </p>
+
+<p><img src="images/02040-openportal.png?raw=true" alt="02040-OpenPortal" title="Open Portal">
+</p></li>
+<li><p>In the <strong>&quot;Application Insights&quot;</strong> portal, click the <strong>&quot;AVAILABILITY&quot;</strong> link along the top, and ensure that your application is selected in the application dropdown.  Below the <strong>&quot;Create a single URL test.&quot;</strong> header, enter the URL for your live web site (<strong>http://&lt;your web site name&gt;.azurewebsites.net</strong>), and click <strong>&quot;Create&quot;</strong>:</p>
+<blockquote>
+<p><strong>Note:</strong> In this step you are adding a <strong>&quot;Single URL Test&quot;</strong>.  Meaning that only a single URL is pinged.  Later, if needed, you can add a multi-URL test for more complex availability tests.  These types of tests are known as <strong>&quot;Synthetic Monitors&quot;</strong> because they test the site on an a &quot;synthetic&quot; schedule, rather than based on organic use of the site.</p>
+</blockquote>
+<p><img src="images/03010-singleurltest.png?raw=true" alt="03010-SingleUrlTest" title="Single URL Test">
+</p></li>
+<li><p>When the test is created (just a second or two), click the <strong>&quot;Success! Now head over to your availability report!&quot;</strong> box to see the report:</p>
+
+<p><img src="images/03020-success.png?raw=true" alt="03020-Success" title="Success">
+</p></li>
+<li><p>On the Availability page, you should now see a single test under your application titled <strong>&quot;My first test&quot;</strong>. Click on the name of the test to select it, then click the <strong>edit</strong> (<strong>pencil</strong>) icon to edit the test:</p>
+
+<p><img src="images/03030-editmyfirsttest.png?raw=true" alt="03030-EditMyFirstTest" title="Edit My First Test">
+</p></li>
+<li><p>In the <strong>&quot;EDIT SYNTHETIC MONITOR&quot;</strong> Window, edit the test to meet your desires. Give it:</p>
+
+<ul>
+<li>A better (more meaningful name)</li>
+<li>Choose more appropriate Locations to test from</li>
+<li>Choose the desired frequency</li>
+<li>Make the test more specific by requiring a certin HTTP status code or content to be returned for the test to be successful</li>
+<li>Enable alerts if a certain number of test locations fail within a certain amount of time</li>
+<li>Use the <strong>Configure notification emails</strong> link to modify the list of emails that will be notified if an alert is triggered. </li>
+<li>When you are done, click the <strong>&quot;OK&quot;</strong> button to save the changes.</li>
+</ul>
+
+<p><img src="images/03040-editmonitor.png?raw=true" alt="03040-EditMonitor" title="Edit Monitor">
+</p></li>
+<li><p>This is where it is really handy if you have previously configured a website for availability monitoring.  If you have done so, you can switch to that website now to view more interesting data.  If not, it will take some time (one set of data points every five minutes) before a useful report will be shown.</p></li>
+<li><p>Regardless of if you look at data for another site, or for the one you just configured, after a bit of monitoring, you should begin to see some data points on the <strong>&quot;AVAILABILITY&quot;</strong> page.  </p>
+
+<ul>
+<li>You can change the time range you are looking at by clicking on the <strong>&quot;Selected date range&quot;</strong> link in the top right corner, or by actually dragging over a range of datapoints on the charts.</li>
+<li>You can hover over a datapoint to see basic info on it</li>
+</ul>
+
+<p><img src="images/03050-datapoints.png?raw=true" alt="03050-DataPoints" title="Data Points">
+</p></li>
+<li><p>If you actually click on a data point, you can see the actual Web Test results (or a more recent web test result for the same site), including the Response details:</p>
+
+<p><img src="images/03050-webtestdetails.png?raw=true" alt="03050-WebTestDetails" title="Web Test Details">
+</p></li>
+<li><p>Lastly, if you switch to the <strong>&quot;USAGE&quot;</strong> page, you can view results like <strong>&quot;Top Pages&quot;</strong>, etc:</p>
+<blockquote>
+<p><strong>Note:</strong> This data is generated by the script that we added to <strong>&quot;_Layout.cshtml&quot;</strong> previously.  Again, this data takes a while to collect. Plus, as this is a demo site, there won't be much actual usage against it. </p>
+</blockquote>
+<p><img src="images/03060-toppages.png?raw=true" alt="03060-TopPages" title="Top Pages">
+</p></li>
+</ol>
+
+<hr>
+
+<p><a name="summary"></a></p>
+
+<h2 id="Summary">Summary</h2>
+
+<p>Congraulations!  In this demo you learned the basics of:</p>
+
+<ul>
+<li>Adding Appliation Insights Telemetry to a Web Application</li>
+<li>Configuring Usage monitoring for a web site</li>
+<li>Configuring Availability monitoring for a web site</li>
+</ul>
+
+</div>
+</body>
+</html>
