@@ -16,8 +16,8 @@ A based on this content has been created and is available on YouTube.  You can w
 - [Overview](http://aka.ms/azuredevopsvid00 "Overview Video")
 - [Creating Dev/Test VMs in Azure](http://aka.ms/azuredevopsvid01 "YouTube Video")
 - [Continous Deployment with Azure Websites](http://aka.ms/azuredevopsvid02 "YouTube Video")
-- Website Monitoring with Application Insights
-- Load Testing with Visual Studio Online
+- Website Monitoring with Application Insights - Coming Soon
+- Load Testing with Visual Studio Online - Coming Soon
 
 Feel free to fork this repository, and issue pull requests if you have something to fix or add.  
 
